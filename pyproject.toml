@@ -1,14 +1,24 @@
 [tool.poetry]
-name = "metal-reviews"
+name = "metal_reviews"
 version = "0.1.0"
 description = ""
 authors = ["YisusChrist <alejandro.gonzalezm02@estudiante.uam.es>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.12"
-matplotlib = "3.9.0"
+python = "^3.12"
+beautifulsoup4 = "^4.12.3"
+enmet = "^0.9.1"
+fake-useragent = "^1.5.1"
+markdown-to-json = "^2.1.1"
+matplotlib = "^3.9.1.post1"
+requests-cache = "^1.2.1"
+rich = "^13.7.1"
 
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+metal_reviews = "metal_reviews.__main__:main"
 
 [build-system]
 requires = ["poetry-core"]
